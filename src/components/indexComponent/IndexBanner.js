@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import dotted from "../../assets/images/thumbs/dotted-bg.png"
 import banner from "../../assets/images/thumbs/banner-shape.png"
 import "./IndexBanner.css"
+import curve from '../../assets/images/shapes/curve-shape.png' 
+import bannerThree from '../../assets/images/thumbs/banner-three.png' 
 
 const IndexBanner = () => {
     const [rent, setRent] = useState(true)
@@ -41,7 +43,7 @@ const IndexBanner = () => {
                                         <h1 className="banner-content__title">Your trusted real estate{" "}
                                             <span className="position-relative d-inline">
                                                 partner
-                                                <img src="assets/images/shapes/curve-shape.png" alt="" className="curve-shape" />
+                                                <img src={curve} alt="" className="curve-shape" />
                                             </span>
                                         </h1>
                                         <p className="banner-content__desc font-18 mb-4 mb-lg-5">Unlock the Power of Real Estate Making Your Real Estate Dreams a Reality Real Estate here Unlock the Power of Real Estate</p>
@@ -50,7 +52,7 @@ const IndexBanner = () => {
                             </div>
                             <div className="col-lg-6 order-lg-0 order-1">
                                 <div className="banner-thumb">
-                                    <img src="assets/images/thumbs/banner-three.png" alt="" />
+                                    <img src={bannerThree} alt="" />
                                 </div>
                             </div>
                             <div className="col-lg-12">

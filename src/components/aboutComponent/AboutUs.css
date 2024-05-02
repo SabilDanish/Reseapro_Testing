@@ -1,0 +1,82 @@
+.about-three-thumb {
+    position: relative;
+}
+
+@media screen and (max-width: 991px) {
+    .about-three-thumb {
+        max-width: 520px;
+    }
+}
+
+.about-three-thumb::before {
+    position: absolute;
+    content: "";
+    width: 160px;
+    height: 75px;
+    background: var(--main-gradient);
+    top: 6px;
+    left: -40px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(-45deg);
+}
+
+.about-three-thumb img {
+    max-width: 520px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.project-content {
+    position: absolute;
+    right: 0;
+    bottom: clamp(0.75rem, -0.619rem + 2.853vw, 1.875rem);
+    display: inline-block;
+    text-align: center;
+    z-index: 1;
+}
+
+@media screen and (max-width: 991px) {
+    .project-content {
+        right: 10px;
+    }
+}
+
+.project-content::before {
+    position: absolute;
+    content: "";
+    background-image: url(http://imagineerblogs.files.wordpress.com/2011/09/172320.jpg);
+    background-image: url(../../assets/images/shapes/polygon-border-shape.png);
+    background-position: center top;
+    background-size: cover;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 167px;
+    height: 167px;
+}
+
+@media screen and (max-width: 991px) {
+    .project-content::before {
+        display: none;
+    }
+}
+
+.project-content__inner {
+    padding: 52px 30px;
+    background-color: var(--gray-100);
+    -webkit-mask: url(../../assets/images/shapes/polygon-shape.png) no-repeat 50% 50%;
+    mask: url(../../assets/images/shapes/polygon-shape.png) no-repeat 50% 50%;
+    -webkit-mask-size: 156px;
+    mask-size: 156px;
+}
+
+@media screen and (max-width: 991px) {
+    .project-content__inner {
+        mask-size: 130px;
+        padding: 41px 23px;
+    }
+}
+
+.project-content__number {
+    margin-bottom: 6px;
+}
