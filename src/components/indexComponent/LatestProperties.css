@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Vidaloka&display=swap");
+
+:root {
+    
+    /* Font Family Variable */
+      --heading-font: "Vidaloka", serif;
+      --body-font: "Jost", sans-serif;
+      --poppins-font: "Poppins", sans-serif;
+    /* Font Size Variable Start */
+      --heading-one: clamp(2rem, -0.0733rem + 6.3692vw, 4.25rem);
+      --heading-two: clamp(1.75rem, 0.7133rem + 2.8846vw, 2.875rem);
+      --heading-three: clamp(1.5rem, 0.3353rem + 2.1661vw, 2.5rem);
+      --heading-four: clamp(1.25rem, 0.5569rem + 1.444vw, 2rem);
+      --heading-five: clamp(1.125rem, 1.2rem + 0.722vw, 1.75rem);
+      --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
+    /* Font Size End */
+    /* Color Variables Start */
+      --main-gradient: linear-gradient(90deg, #F69220 0.04%, #F68E20 28.67%, #F48421 54.05%, #F37221 78.11%, #F05A22 100.04%);
+      --main-gradient-rev: linear-gradient(270deg, #F69220 0.04%, #F68E20 28.67%, #F48421 54.05%, #F37221 78.11%, #F05A22 100.04%);
+    /* Gray Color */
+      --gray-h: 0;
+      --gray-s: 0%;
+      --gray-l: 97%;
+      --gray: var(--gray-h) var(--gray-s) var(--gray-l);
+      --gray-900: #181616;
+      --gray-800: #777;
+      --gray-700: #211E1E;
+      --gray-200: #E0E0E0;
+      --gray-100: #F8F8F8;
+    /* White Color */
+      --white: 0 0% 100%;
+    /* Light Color */
+      --light-h: 0;
+      --light-s: 1%;
+      --light-l: 53%;
+      --light: var(--light-h) var(--light-s) var(--light-l);
+    /* Black Color */
+      --black-h: 0;
+      --black-s: 4%;
+      --black-l: 9%;
+      --black: var(--black-h) var(--black-s) var(--black-l);
+      --heading-color: var(--black);
+      --body-color: var(--light);
+      --body-bg: var(--gray);
+      --border-color: var(--gray-200);
+      --section-bg: 208 100% 97%;
+    /* Card box shadow */
+      --box-shadow: 0px 2px 15px hsl(var(--black) /.05);
+      --box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.15), 0px 4px 13px -2px rgba(19, 16, 34, 0.1);
+    /* ========================= Main Color ============================= */
+      --main-h: 28;
+      --main-s: 91%;
+      --main-l: 54%;
+      --main: var(--main-h) var(--main-s) var(--main-l);
+    /* Main Lighten */
+      --main-l-100: var(--main-h) calc(var(--main-s)) calc(var(--main-l) + (100% - var(--main-l)) * 0.1);
+      --main-l-200: var(--main-h) calc(var(--main-s)) calc(var(--main-l) + (100% - var(--main-l)) * 0.2);
+      --main-l-300: var(--main-h) calc(var(--main-s)) calc(var(--main-l) + (100% - var(--main-l)) * 0.3);
+      --main-l-400: var(--main-h) calc(var(--main-s)) calc(var(--main-l) + (100% - var(--main-l)) * 0.4);
+      --main-l-500: var(--main-h) calc(var(--main-s)) calc(var(--main-l) + (100% - var(--main-l)) * 0.5);
+      --main-l-600: var(--main-h) calc(var(--main-s)) calc(var(--main-l) + (100% - var(--main-l)) * 0.6);
+      --main-l-700: var(--main-h) calc(var(--main-s)) calc(var(--main-l) + (100% - var(--main-l)) * 0.7);
+      --main-l-800: var(--main-h) calc(var(--main-s)) calc(var(--main-l) + (100% - var(--main-l)) * 0.8);
+      --main-l-900: var(--main-h) calc(var(--main-s)) calc(var(--main-l) + (100% - var(--main-l)) * 0.9);
+    /* Main Darken  */
+      --main-d-100: var(--main-h) var(--main-s) calc(var(--main-l) - var(--main-l) * 0.1);
+      --main-d-200: var(--main-h) var(--main-s) calc(var(--main-l) - var(--main-l) * 0.2);
+      --main-d-300: var(--main-h) var(--main-s) calc(var(--main-l) - var(--main-l) * 0.3);
+      --main-d-400: var(--main-h) var(--main-s) calc(var(--main-l) - var(--main-l) * 0.4);
+      --main-d-500: var(--main-h) var(--main-s) calc(var(--main-l) - var(--main-l) * 0.5);
+      --main-d-600: var(--main-h) var(--main-s) calc(var(--main-l) - var(--main-l) * 0.6);
+      --main-d-700: var(--main-h) var(--main-s) calc(var(--main-l) - var(--main-l) * 0.7);
+      --main-d-700: var(--main-h) var(--main-s) calc(var(--main-l) - var(--main-l) * 0.7);
+      --main-d-800: var(--main-h) var(--main-s) calc(var(--main-l) - var(--main-l) * 0.8);
+      --main-d-900: var(--main-h) var(--main-s) calc(var(--main-l) - var(--main-l) * 0.9);
+    /* ========================= Main Two Color ============================= */
+  }
+
+.latest-properties{
+    margin-top: 5rem;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: clamp(2.5rem, 0.066rem + 5.071vw, 4.5rem);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-heading__title{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.flx-align, .common-radio, .common-check {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.property-item {
+    background-color: hsl(var(--white)/0.025);
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.2s linear;
+    box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1), 0px 4px 13px -2px rgba(19, 16, 34, 0.06);
+}
+
+.property-item:hover {
+    background-color: hsl(var(--white)/0.04);
+}
+
+.property-item:hover::before {
+    width: 100%;
+}
+
+.property-item:hover .property-item__thumb img {
+    transform: scale(1.04);
+}
+
+.property-item::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background: var(--main-gradient);
+    transition: 0.2s linear;
+}
+
+.property-item__thumb {
+    position: relative;
+    overflow: hidden;
+    max-height: 252px;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.property-item__thumb .link {
+    display: block;
+    width: 100%;
+}
+
+.property-item__thumb img {
+    transition: 0.2s linear;
+}
+
+.property-item__content {
+    padding: clamp(1rem, -0.065rem + 2.219vw, 1.875rem);
+    color: hsl(var(--white));
+    flex-grow: 1;
+}
+
+.property-item.style-two .property-item__content {
+    box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1), 0px 4px 13px -2px rgba(19, 16, 34, 0.06);
+    border-radius: 5px 0px 5px 5px;
+    margin-top: -88px;
+    margin-left: 40px;
+    position: relative;
+    background-color: hsl(var(--white));
+}
+
+.property-item.style-two {
+    overflow: unset;
+    display: block;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.property-item.style-two::before {
+    display: none;
+}
+
+.property-item.style-two .property-item__thumb {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.property-item.style-two .property-item__content {
+    box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1), 0px 4px 13px -2px rgba(19, 16, 34, 0.06);
+    border-radius: 5px 0px 5px 5px;
+    margin-top: -88px;
+    margin-left: 40px;
+    position: relative;
+    background-color: hsl(var(--white));
+}
+
+.property-item__title, .property-item__price {
+    color: hsl(var(--white));
+    font-family: var(--poppins-font);
+    font-weight: 400;
+}
+
+.property-item__title {
+    margin-bottom: clamp(0.75rem, 0.141rem + 1.268vw, 1.25rem);
+}
+
+.property-item__title .link {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.property-item.style-two .amenities-list__item .text {
+    color: var(--gray-800);
+    font-weight: 500;
+}
+
+.amenities-list__item .icon {
+    font-size: 1rem;
+}
+
+.amenities-list {
+    gap: 20px;
+}
+
+.amenities-list__item {
+    gap: 10px;
+    font-size: 0.75rem;
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+.amenities-list__item .icon {
+    font-size: 1rem;
+}
+
+.property-item__price {
+    margin-bottom: clamp(0.75rem, 0.446rem + 0.634vw, 1rem);
+}
+
+.property-item__price .day {
+    font-size: 0.75rem;
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+.property-item__title, .property-item__price {
+    color: hsl(var(--white));
+    font-family: var(--poppins-font);
+    font-weight: 400;
+}
+
+.property-item.style-two .property-item__title, .property-item.style-two .property-item__price {
+    color: hsl(var(--heading-color));
+    font-weight: 600;
+}
+
+.property-item.style-two .property-item__price {
+    margin-top: 20px;
+}
+
+.property-item__location {
+    font-size: clamp(0.875rem, 0.571rem + 0.634vw, 1.125rem);
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.property-item__location .icon {
+    font-size: 0.875rem;
+}
+
+.property-item.style-two .property-item__location {
+    color: var(--gray-800);
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.font-14 {
+    font-size: 0.875rem !important;
+}

@@ -1,0 +1,116 @@
+.footer {
+    margin-top: auto;
+    background-color: hsl(var(--black));
+}
+
+.footer-item__desc {
+    margin-top: 32px;
+    max-width: 230px;
+    color: hsl(var(--white));
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.footer-item__logo {
+    margin-bottom: 20px;
+}
+
+.footer-item__logo a img {
+    width: 100%;
+    height: 100%;
+    max-width: 190px;
+    max-height: 64px;
+}
+
+.footer-item__title {
+    margin-bottom: clamp(1rem, -0.826rem + 3.803vw, 2.5rem);
+    font-family: var(--poppins-font);
+    color: hsl(var(--white));
+    font-weight: 500;
+}
+
+/* Footer List Item */
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu__item {
+    display: block;
+    padding-bottom: 16px;
+}
+
+.footer-menu__item:last-child {
+    padding-bottom: 0;
+}
+
+.footer-menu__link {
+    color: hsl(var(--white));
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 991px) {
+    .footer-menu__link {
+        font-size: 1rem;
+    }
+}
+
+.footer-menu__link:hover {
+    color: hsl(var(--main));
+}
+
+.social-list {
+    display: inline-flex;
+    gap: 24px;
+    align-items: center;
+    margin-top: 30px;
+    border: 1px solid hsl(var(--white) / 0.15);
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.bottom-footer {
+    background-color: hsl(var(--black));
+}
+
+.bottom-footer__inner {
+    border-top: 1px solid hsl(var(--white)/0.15);
+    padding: 30px 0;
+}
+
+@media screen and (max-width: 991px) {
+    .bottom-footer__inner {
+        padding: 20px 0;
+    }
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(0.625rem, -0.896rem + 3.17vw, 1.875rem);
+}
+
+.footer-link, .bottom-footer__text {
+    font-weight: 400;
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: hsl(var(--white)/0.8);
+}
+
+@media screen and (max-width: 991px) {
+    .footer-link, .bottom-footer__text {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-link, .bottom-footer__text {
+        font-size: 0.9375rem;
+    }
+}
+
+.footer-link:hover, .bottom-footer__text:hover {
+    color: hsl(var(--main));
+}
