@@ -31,7 +31,7 @@ const IndexBanner = () => {
     return (
         <div>
             <section className="banner-three">
-                <img src={dotted} alt="" className="banner-three__dotted" style={{width: "100%", height: "100%"}} />
+                <img src={dotted} alt="" className="banner-three__dotted" style={{width: "50%", height: "100%"}} />
                 <img src={banner} alt="" className="banner-three__shape" />
                 <div className="container container-two">
                     <div className="banner-three__inner position-relative padding-y-120">

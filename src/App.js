@@ -7,10 +7,13 @@ import Faq from './pages/Faq';
 import Checkout from './pages/Checkout';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <div className="App">
+      <ToastContainer />
       <BrowserRouter>
         <Navbar />
         <Routes>
